@@ -1,3 +1,5 @@
 .venv
 build
 CMakeUserProfiles.json
+.**.sw*
+.sw*
