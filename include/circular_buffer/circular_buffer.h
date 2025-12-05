@@ -86,7 +86,7 @@ template <typename T> bool CircularBuffer<T>::push(T &&elem) {
     return false;
   }
 
-  buffer[tail] = elem;
+  buffer[tail] = std::move(elem);
   tail = wrapped_increment(tail);
   ++size_;
   return true;
